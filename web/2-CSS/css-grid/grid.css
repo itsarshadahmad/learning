@@ -1,0 +1,53 @@
+body {
+	display: grid;
+
+	/* it specify number of columns and width.
+    Two columns 1st is 1fr, 2nd is 2fr */
+	grid-template-columns: 1fr 2fr;
+
+	/* it specify number of rows and height. */
+	grid-template-rows: 1fr 1fr;
+
+	/* it set gaps between grid elements */
+	gap: 10px;
+	background-color: bisque;
+
+	/* Grid template is shorthand property for grid-template-rows,
+    grid-template-columns, grid-template-areas */
+	grid-template: 1fr / 2fr;
+
+	/* minmax -> sets 1st minimum this much value to 2nd maximum this much value. */
+	grid-template-rows: 200px minmax(400px, 5fr);
+
+	/* It allow to set element rows size if item exceed template-row size defined
+    (grid-template-rows). */
+	grid-auto-rows: 100px;
+
+	/* span allow us takes multiple cells of grid. */
+	grid-column: span 2;
+	grid-column: 2 / 4;
+
+	/* It specify element starting & ending and scale accordingly. 
+	It works on grid lines (grid outline) which is one more than grid cells. */
+	grid-column-start: 2;
+	grid-column-end: 4;
+
+	/* its shorthand for column-start and end property. */
+	grid-area: 2 / 1 / 3 / 3;
+
+	/* It specify order to flexible item (like flexbox and grid) inside same 
+	container. By default every element order: 0;. It set itself to next element. */
+	order: 1;
+
+	/* Implicit Grid -> its dynamic in nature and adopt elements according to 
+	screen size.
+	Explicit Grid -> its pre-defined which render elements as defined.
+	*/
+
+	/* It changes flow of grid like flex-direction. by default it set to row. */
+	grid-auto-flow: column;
+
+	/* Autofit and Autofill */
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}

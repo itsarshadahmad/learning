@@ -1,0 +1,29 @@
+Practice and Notes:-
+- Prisma
+- Thread pool
+https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
+- Observer design pattern
+- setImmediate
+- Process
+- Stream API, Node Stream
+- fs module, read stream
+- Buffers
+- Pipe
+- Read Stream, Write Stream
+- Same Origin Policy
+- CORS
+- Express Middleware
+- CDN, server data from cdn? serving static files using cdn?
+- Object, Object.assign()
+- Integration Testing
+- Jest Testing
+- Sequalize
+- Test Runner, Test Fixtures,
+- Cluster module, Round robin approach
+- PM2
+- Worker Thread
+- Socket.io and web sockets
+
+One request handle by one thread that's why cpu heavy process can be bit 
+problematic for nodejs servers that's also one place where nodejs get 
+criticize.

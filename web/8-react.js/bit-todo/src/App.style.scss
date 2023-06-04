@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+    background-color: #eee;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.add-todo-form {
+    display: flex;
+    justify-content: center;
+
+    input {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid grey;
+}
+
+.todo-items {
+    max-width: 100vw;
+
+    .todo-item-checkbox {
+        display: flex;
+    }
+
+
+    h3 {
+        line-break: anywhere;
+        word-wrap: break-word;
+    }
+}

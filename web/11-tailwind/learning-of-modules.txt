@@ -1,0 +1,32 @@
+Tailwind CSS:
+Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces. It is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.
+
+The beauty of this thing called tailwind is it doesn’t impose design specifications or how your site should look, you simply bring tiny components together to construct a user interface that is unique. What Tailwind simply does is take a ‘raw’ CSS file, process this CSS file over a configuration file, and produces an output.
+
+
+Use tailwind docs:
+Tailwind has soo many classes which makes it impossible to remember all of those, so its better to go through docs to see value setting up environment for different uses cases like frameworks or for vanilla projects.
+
+
+Predefined classes:
+Tailwind has predefined classes which has configuration to make tailwind work its required to include these files - base, component and utilities.
+
+
+Custom css values:
+Square notation "[]" used to give custom values to tailwind.
+
+
+Responsive:
+Tailwind works in mobile first responsive way so design web apps is used where you write for mobile screen first following breakpoint for larger screens. Start with small screen size then use breakpoints to design for large screens "sm:, lg:, etc".
+
+
+@apply directive:
+It is also possible to write tailwind css in css approach for that we can use @apply directive which takes all classes of tailwind and make it inside our defined css selector and then used in html to apply all those styles which also make html cleaner and keep everything clean.
+
+
+@layer directive:
+Writing code in most places order matter, what is writter first executes first. Css also has that thing and to avoid that we need to use @layer which makes specified layer code put inside given under predefined module. For ex. writing css inside component module will put your css inside component module before utilities. It can be used to write re-writable moduler code which design your element but can also be re-used if want to override using some tailwind utilities classes.
+
+
+@apply gives us classes to apply on defined class name or selector and @layer gives us controll of execution where we can put code in order so it can be modified to our requirements.
+
