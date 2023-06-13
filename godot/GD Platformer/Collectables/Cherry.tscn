@@ -1,0 +1,54 @@
+[gd_scene load_steps=11 format=3 uid="uid://chned8rqu0v6y"]
+
+[ext_resource type="Texture2D" uid="uid://je3pi3lplgkt" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-1.png" id="1_7dyar"]
+[ext_resource type="Script" path="res://Collectables/Cherry.gd" id="1_h51b8"]
+[ext_resource type="Texture2D" uid="uid://cgh8wtfgx5vg4" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-2.png" id="2_66f3n"]
+[ext_resource type="Texture2D" uid="uid://cr5b61oqb737l" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-3.png" id="3_ki88c"]
+[ext_resource type="Texture2D" uid="uid://cdxg8heyhnh4h" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-4.png" id="4_7npjl"]
+[ext_resource type="Texture2D" uid="uid://ttndcu4uwglk" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-5.png" id="5_tb83j"]
+[ext_resource type="Texture2D" uid="uid://b4qyt77i38iqt" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-6.png" id="6_tvgxm"]
+[ext_resource type="Texture2D" uid="uid://dm3py883bgp7p" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-7.png" id="7_eb6xm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hs2cc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jlgdj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7dyar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_66f3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ki88c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7npjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tb83j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tvgxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_eb6xm")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Cherry" type="Area2D"]
+script = ExtResource("1_h51b8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hs2cc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
+position = Vector2(2, 0)
+sprite_frames = SubResource("SpriteFrames_jlgdj")
+animation = &"Idle"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

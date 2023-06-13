@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://vp3kpmo5dhci"]
+
+[resource]
+albedo_color = Color(0.0588235, 0.968627, 0.0588235, 1)
+metallic = 0.3
+roughness = 0.2
+ao_light_affect = 0.24
+subsurf_scatter_strength = 0.19

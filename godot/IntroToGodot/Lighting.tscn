@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://brmb3dau6vq14"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hg4yu"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_amx21"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_hg4yu")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.929339, 0.369228, 0, -0.369228, -0.929339, 0.188384, 0, 0)
+visible = false
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(-0.862463, 0.506115, -0.00207547, 0.0289856, 0.0452991, -0.998553, -0.505289, -0.861275, -0.0537389, 0.00677896, -0.18251, 0.984658)
+light_color = Color(1, 1, 0, 1)
+light_energy = 1.646
+shadow_enabled = true
+omni_range = 3.50974
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.49568, 0, 0, 0, 4.48442, 0, 0, 0, 5.28197, 0, -0.963003, 0)
+mesh = SubResource("PlaneMesh_amx21")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.104181, 0.994558, 0, -0.994558, -0.104181, 0, 2.73804, 0)
+visible = false
+light_color = Color(1, 0.388235, 0.67451, 1)
+light_energy = 2.616
+shadow_enabled = true
+spot_range = 8.1062
