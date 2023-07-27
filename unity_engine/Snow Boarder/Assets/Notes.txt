@@ -1,0 +1,47 @@
+sprite shape -> The Sprite Shape is a flexible and powerful world building Asset that features
+Sprite tiling along a shape's outline that automatically deforms and swaps Sprites based on 
+the angle of the outline. Additionally, you can assign a Fill texture to a Sprite Shape to 
+create filled shapes with tiled textures as backgrounds or other large level-building props.
+
+Gizmo -> Gizmos are used to give visual debugging or setup aids in the Scene view.
+
+Edge collider 2d -> The Edge Collider 2D component is a collider for use with 2D physics. The collider's 
+shape is defined by a freeform edge made of line segments, so you can adjust it to fit the shape of the 
+Sprite graphic with great precision.
+
+cinemachine -> Its powerful package that allow to manage multiple cameras in our scene and easily create rules for our cameras. It can also have multiple cameras for different purposes like when speed up then use x camera and when win show y camera, etc.
+
+Unity Package Manager -> A package is a container that holds any combination of Assets, Shaders, Textures, plug-ins, icons, and scripts that enhance various parts of your project.
+
+Effector 2d -> The Point Effector 2D applies forces to attract/repulse against a source point which can be 
+defined as the position of the rigid-body or the center of a collider used by the effector.
+Use Effector 2D components with Collider 2D components to direct the forces of physics when GameObject
+colliders come into contact with each other. 
+
+Surface effector 2D -> The Surface Effector 2D applies tangent forces along the surfaces of colliders used 
+by the effector in an attempt to match a specified speed along the surface. This is analogous to a conveyor 
+belt.
+
+addtorque -> Force can be applied only to an active rigidbody. If a GameObject is inactive, AddTorque 
+has no effect.
+
+scenemanagement -> Changing scene based on the game's story or based on the menu is a common functionality 
+required in all game engines.
+
+scenemanager -> The Unity Scene Manager manages your scenes at runtime. It is a well-equipped class of Unity 
+engine that we can use to effortlessly switch between scenes.
+
+Paricle System -> The Particle System in Unity is a robust particle effect system where you can 
+simulate moving liquids, smoke, clouds, flames, magic spells, and a whole slew of other effects.
+
+findobjectoftype -> FindObjectOfType searches for the specified type of object in the entire scene
+GetComponent -> It searches for the component only within the object the script is attached to, this 
+does not include childed objects.
+
+Audio Listener -> like a mic receives sound and plays through your computer's speakers
+
+Audio Source -> Plays audio and allows us to adjust settings (eg. volume)
+
+Audio Clip -> Contains the audio data to be played (mp3, wav, ogg)
+
+Public Access modifier -> It has same scope concepts as oops but it has advantage in unity you can define serializedfield or make variable instanciate or make it accessible in unity editor like serializedfield. But it could be not best thing todo every time because it will also allow you to inherit or export public field which can be modified from other field.

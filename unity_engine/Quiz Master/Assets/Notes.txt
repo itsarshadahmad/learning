@@ -1,0 +1,72 @@
+UI Canvas:-
+* UI = User Interface - Text, Buttons, sliders, menu, etc.
+* UI elements live on the "Canvas" or child of canvas.
+* The canvas generally exists in "Screen Space" and is mostly separate from the game
+world. You can have multiple canvases. 
+
+
+Screen Space VS World Space:-
+Screen space is canvas screen space. Ui element works on canvas space accordingly.
+Screen coordinates are the coordinates you see on your 2D screen. For example the top 
+left pixel of your screen would be defined as screen coordinates (0,0).
+
+World Space is space for game objects to setup your game scene on it accordingly.
+World coordinates are the points in 3D space. For example (0,0,0) would be the center 
+of your world.
+
+Screen space and world space interact in different coordinates 5 on x-axis will reflect
+differently in both world and screen space.
+
+
+Anchor & Pivot:-
+Anchor presets and pivot are used define your UI position with ease. Canvas view is 
+lot larger than camera view by default.
+
+
+TextMeshPro:-
+TextMeshPro is the ultimate text solution for Unity. It has many features for text 
+like shader, text shadow, glow, lighting, advance rendering and great performance etc.
+Font need to convert to font asset in order to use it commercially.
+TextMeshPro has two types one used in world screen other in gui screen, so while 
+coding make sure to choose accordingly between TextMeshPro and TextMeshProUGUI classes.
+
+
+Scriptable Object:-
+Its just a data container. Keep data out of our scripts. Help us save memory by 
+storing data in one place. They don't need to be attached to game objects.
+They are lightweight and convenient. Act as a template for consistency. It act like template to recreate ScriptableObject.
+Example use cases: Weapon stats, etc.
+
+In C# file ScriptableObject scritps inherit from ScriptableObject class and 
+add attribute of CreateAssetMenu() define field your project require. Its all
+attributes to define structure of your ScriptableObject. Then you have option when
+right clicked to create ScriptableObject files from option list.
+
+
+Note:- Most convenient way to refer to object or create instance of assets are 
+using SerializeField attribute. You can refer object in unity editor and then use method
+in code to perform actions and task.
+
+
+Header Attribute:-
+They help us in using the inspector easier, saving your time, and so on. For 
+example, I have learnt the Header attribute that helps us to organize our variables 
+in the inspector. Imagine, you have lots of variables and do not use Header, 
+how messy they are going to seem!
+
+
+Game Manager:-
+GameManager. A simple unity game management system to handle loading a game, its levels
+and saving the levels data such as score, gained money, level number. Technically its a
+full game circle.
+
+A gaming manager supervises the daily operations at a casino. They monitor the 
+activities of casino staff and patrons in order to ensure that games are running 
+smoothly and that all rules are being followed
+
+
+Awake method:-
+Use Awake to initialize variables or states before the application starts. Unity calls 
+Awake only once during the lifetime of the script instance. A script's lifetime lasts 
+until the Scene that contains it is unloaded. If the Scene is loaded again, Unity loads 
+the script instance again, so Awake will be called again.

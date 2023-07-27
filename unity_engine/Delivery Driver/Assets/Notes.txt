@@ -1,0 +1,57 @@
+Unity Essentials:
+
+Game Object -> It is item that make our unity scene. Everything inside scene is game object.
+These object are made up of numbers of components. Each component give behaviour & look
+to our game object. Scripts are also part of component.
+
+Scene view -> Its what we see or view
+
+scene -> Game Object -> component
+
+Prefabs -> It is preconfigured game object that act as template which can be used in scene and 
+store in project. You can create multiple instance or clone of prefabs in screen. It also allow you to modify at one place to reflect everywhere changes. You can also change only single instance of prefabs.
+
+Tags -> It is way to identify game object in unity. For ex- you may have multiple type of enemy
+in scene like plane, tank, mobs. It can be marked as enemy then player can be set behaviour to interaction between enemy & player.
+Tags allow you to find enemy object easily find object in code & code its behaviour.
+
+Layer -> Its used to define some functionality across many different game object in unity. 
+Layer are used to indicate which object should be drawn in scene view, should ignore raycast, or are
+invisible to camera. Layer can be predefined or create to define own layer.
+
+Sprite -> A sprite is a 2D graphic object obtained from a bitmap image. In other word its image which
+translated into sprite so game engine can understand.
+
+Things todo before starting:-
+Overview of project (Whats game about, story) | Rough prototype (Rough representation, rough game, psd) | 
+Game machenics (What game will do) | Game Design (Targeted player experience of game, core machenics,
+game loop, game feel
+
+Rigidbody 2d -> adds physics to object and gives option to manipulate physics accordingly 
+like gravity = 0 means no gravity physics.
+
+Time.deltaTime() -> It tell unity how long each frame took to execute. This make game behave same on 
+both fast and slow computers. Update method works on each frame per second which differ on every 
+device. deltaTime helps to work with duration of frame.
+
+Collider 2D -> It is used to give game object behaviour of collision and events to handle collision
+in game.
+
+SerializeField -> It allow to make code variable, function or class available to unity editor so you
+can modify your from there, it also allow refer and change values from editor.
+
+Input.GetAxis() -> It returns keys or controls value to make game work according to defined controls.
+
+Gameloop -> The game loop is a sequence of processes that run continuously as long as the game is running.
+The three main processes that occur in the game loop are input, update, and render. The input 
+process is how the player controls the game.
+
+Order of execution for event functions -> 
+Running a Unity script executes a number of event functions in a predetermined order. This page 
+describes those event functions and explains how they fit into the execution sequence.
+
+Rough representation of lifecycle:-
+
+Initialization -> Editor -> Initialization -> Physics -> Input Events -> Game logic -> Scene rendering -> Gizmo rendering -> GUI rendering -> End of frame -> pausing -> Decommissioning
+
+Note:- Use documentation to see unity order of execution.
