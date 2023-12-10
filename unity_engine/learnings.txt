@@ -1,0 +1,310 @@
+Game Design:
+Game design is the process of creating and shaping the mechanics, systems, and rules of a game. Games can be created for entertainment, education, exercise, or experimental purposes. Increasingly, elements and principles of game design are also applied to other interactions, in the form of gamification.
+
+
+Player Experience:
+Crafting an immersive and enjoyable player experience isn't just essential for your game's success—it can also be fun. For players, every design aspect, from the core mechanics to game features, plays a vital role in enhancing their overall enjoyment.
+
+
+Core Mechanic:
+The core mechanics of a game are the basic actions that players can take. They define how the game works and how players interact with it. Core mechanics also influence the level design. 
+
+
+Core Game Loop:
+In game design, the core game loop (CGL) is the central gameplay mechanic that players repeatedly perform to progress and achieve goals. It's the primary flow of the player's experience. The CGL determines the game's genre, gameplay type, and more.
+
+
+Tilemap:
+A tilemap is a 2D grid of tiles of equal size that are used to create a game's layout. Each tile can display an image.
+
+
+Tileset vs Tilemap:
+Tileset: A collection of tiles of the same size. Palette: A collection of RGBA colors (palette entries). Tilemap Layer: A 2D image where each pixel is a “tile index” that references a tile in the tileset. Each tilemap has a specific tileset associated.
+
+
+Sprite Sheet:
+A sprite sheet is a bitmap image file that contains multiple smaller graphics in a tiled grid arrangement. Sprite sheets have been around since the first computer games.
+
+
+Game Theme:
+A game theme refers to the subject matter the game is built around. A theme could be very abstract, like “shapes” for example. A game could also be very story driven and have a theme like “mystery”.
+
+
+Assets:
+A game asset is any resource used in the development of a video game.
+
+
+Tile Palette:
+a tile palette is a set of tiles used to paint on tilemaps. A tilemap is a grid overlay with other components that allow you to paint levels with tiles and brush tools. You can also define rules for how tiles behave.
+
+
+Layer:
+Layers in Unity help indicate functionalities across GameObjects, such as which GameObjects should be ignored by raycasts or are invisible to the camera. This system is useful when building complex systems or aiding in gameplay functionality like collision detection.
+
+
+Rules Tile (Auto Tile in Godot):
+Rule Tiles are a powerful tool for creating dynamic and visually interesting 2D tilemaps. They are a type of generic Tile that can be used to automatically generate tiles based on a set of rules. This allows you to create complex patterns and effects without having to manually place each individual tile.
+
+
+Plugins in-game engine (unity plugins):
+Plugins in game engines are pieces of software that extend the functionality of the engine in various ways. They can add new features, improve existing features, or provide specific tools for developers.
+
+
+Sprite:
+A sprite refers specifically to a 2D bitmap image that represents a character, object, or other visual element within the game world. They play a crucial role in 2D game development and animation.
+
+
+Animator Component:
+Animator Component is a crucial tool for bringing your characters and objects to life. It's responsible for controlling and playing animations on a GameObject. Here's a breakdown of its key features:
+
+What it does:
+
+-> Play animations: Plays pre-defined animations on your GameObject based on specific triggers or conditions.
+-> Blend animations: Blends smoothly between different animations, creating natural transitions.
+-> Control animation parameters: Allows you to dynamically control aspects of an animation like speed, weight, and timing.
+-> Manage animation events: Trigger events at specific points in an animation to activate other game logic.
+
+
+Animator Controller:
+An Animator Controller allows you to arrange and maintain a set of Animation Clips and associated Animation Transitions.
+
+
+Sprite Renderer:
+A Sprite Renderer uses the texture supplied in the Sprite property but uses the Shader and other properties from the Material property. This means you can use the same material to render different Sprites without worrying about what texture is assigned on the material.
+
+
+Prefab:
+Prefabs are a feature that allows users to create and manage reusable objects and GameObjects. Prefabs are templates that define a GameObject with its properties, components, and child objects. Users can then instantiate multiple instances of that GameObject throughout their scene.
+
+
+Scene:
+Scenes contain the objects of your game. They can be used to create a main menu, individual levels, and anything else. Think of each unique Scene file as a unique level. In each Scene, you will place your environments, obstacles, and decorations, essentially designing and building your game in pieces.
+
+
+Composite Collider 2d:
+The Composite Collider 2D component is a Collider for use with 2D physics. Unlike most colliders, it does not define an inherent shape. Instead, it merges the shapes of any Box Collider 2D or Polygon Collider 2D that you set it up to use.
+
+
+Rigid Body 2d:
+Adding a Rigidbody2D component to a sprite puts it under the control of the physics engine. By itself, this means that the sprite will be affected by gravity and can be controlled from scripts using forces. By adding the appropriate collider component, the sprite will also respond to collisions with other sprites.
+
+
+Capsule Collider 2d:
+A Capsule Collider 2D in Unity is a component that interacts with the 2D physics system. It has a continuous round circumference and no vertex corners. This shape helps the Capsule Collider 2D avoid getting caught in the corners of other colliders.
+
+
+Freeze Rotation:
+Enabling freezeRotation prevents the physics simulation from modifying the rotation. This can be useful for first person shooters, where the player needs full control of the rotation using the mouse.
+
+
+Input System:
+Input System allows users to set up controls for multiple platforms, including mobile and VR. The system standardizes the way controls are implemented and offers advanced functionality. 
+
+
+GetComponent:
+GetComponent method is used to access and interact with components attached to a GameObject. It returns the first matching component found on the GameObject.
+
+
+Collider2d:
+2D collider is a component that defines a shape for physical collisions. It can also notify a GameObject's script when another GameObject collides with the collider. 
+
+
+LayerMask:
+In Unity, a layer mask is a 32-bit integer that represents a collection of zeros. A 0 in the layer mask represents an object that cannot be hit, and a 1 represents an object that can be hit. 
+Unity uses the first 8 layers, and the user can use the remaining 24. A GameObject can use up to 32 LayerMasks. 
+
+Here are some ways to use layer masks in Unity: 
+-> Ignore layers: A layer mask can ignore multiple layers, each represented by a single bit in the 32-bit integer.
+-> Indicate functionalities: Layers can indicate functionalities across GameObjects, such as which GameObjects should be ignored by raycasts or are invisible to the camera.
+-> Aid gameplay functionality: Layers can aid in gameplay functionality like collision detection.
+
+
+Cinemachine:
+Cinemachine is a plugin for Unity that provides camera tools for games and animations. It's designed to help cameras operate intelligently and capture what's needed. Cinemachine can handle the complex logic of tracking targets, blending, cutting, and composing between shots. It can also experiment with tracking, dollies, shake, and post-FX in real-time.
+
+
+Cinemachine confiner:
+When confining the camera, the Cinemachine Confiner 2D considers the camera's view size at the polygon plane, and its aspect ratio. Based on this information and the input polygon, it computes a second (smaller) polygon, and constrains the camera's transform to it.
+
+
+Polygon Collider 2d:
+The Polygon Collider 2D component is a Collider for use with 2D physics. The Collider's shape is defined by a freeform edge made of line segments, so you can adjust it to fit the shape of the Sprite graphic with great precision.
+
+
+Bounding Shape 2d:
+Bounding shape is required for a Cinemachine Confiner in Unity 2D. The Confiner limits the camera's movement by using a Polygon Collider 2D or a Composite Collider 2D.
+
+
+Physics Material 2d:
+A Physics Material 2D is used to adjust the friction and bounce that occurs between 2D physics objects when they collide. You can create a Physics Material 2D from the Assets menu (Assets > Create > Physics2D Material ).
+
+
+Vector2:
+A Vector2 object in Unity describes the X and Y position of a game object. Vectors are mathematical models that model both direction and magnitude.
+
+
+Vector3:
+Vector3 is a struct that represents a 3D direction. It can be used to reference the X, Y, and Z position of an object. Vector3 can also be used for detecting direction and rotations.
+
+
+MonoBehaviour:
+MonoBehaviour is a base class that all scripts derive from. It provides a variety of built-in functions for controlling game objects, responding to player input, and more. 
+
+
+LayerMask:
+A layer mask in Unity is a 32 bit integer, where Unity gobbles up the first 8 layers, and the other 24 layers are available to the user. Layer masks are binary numbers where a 0 represents objects that can not be hit, and a 1 is for objects in the layer that can be hit.
+
+Mask:
+A Mask is not a visible UI control but rather a way to modify the appearance of a control's child elements. The mask restricts (ie, "masks") the child elements to the shape of the parent. So, if the child is larger than the parent then only the part of the child that fits within the parent will be visible.
+
+
+Instantiate():
+Instantiate() function is used to create clones of game objects. It's a function of the Object Class.
+Instantiate() is commonly used to clone prefabs. Prefabs are pre-configured objects that are saved in the project's assets. They can be shared between scenes or other projects.
+
+
+Transform:
+Transform is a component that stores and manipulates the position, rotation, and scale of each object in a scene. A Transform has three visible properties: Position, Rotation, Scale. 
+
+
+Tag:
+Tags help to indicate which objects are interacting with each other, and how they should interact. For example, you can use tags to create a bullet hole in a wall, but not in an enemy soldier.
+
+
+Sorting Layers:
+SortingLayer allows you to set the render order of multiple sprites easily. There is always a default SortingLayer named "Default" which all sprites are added to initially. Added more SortingLayers to easily control the order of rendering of groups of sprites.
+
+
+Destroy():
+Destroy() function can be used to remove game objects or components from game objects at runtime.
+
+
+Coroutines:
+coroutine is a function that can pause execution and resume from the same point after a condition is met. Coroutines can be used to: 
+-Execute game logic across multiple frames
+-Keep executing a section of code until told to stop
+
+Coroutines work similarly to a to-do list. Unity executes the coroutine function in order, just like a regular method in update. However, unlike update, coroutines can pause what they're doing during one frame and pick up where they left off in the next.
+
+
+Scenes in build (Build index, Scene index):
+The Scenes In Build pane displays a list of the Scenes from your Project that Unity includes in the build. If you can't see any Scenes in this pane, select Add Open Scenes to add all the currently open Scenes to the build. You can also drag Scene Assets from your Project window into this window.
+
+The build index for a scene varies from zero to the number of scenes in the build settings minus one. This is because indexes start at zero. For example, if there are five scenes in the build settings, the index will be from zero to four.
+
+
+SceneManager:
+The SceneManager module in Unity handles scene management. Scene management is used to organize the different levels or parts of a game or application. It is used for: 
+-Loading, unloading, and preloading scenes
+-Menu navigation
+-Level restart
+
+
+Game Session:
+Gaming session means the period of time commencing when a player initiates a game or series of games on a gaming device by committing a wager and ending at the time of a final game outcome for that game or series of games.
+
+
+Awake:
+Awake is a method that is called when an enabled script instance is being loaded. It is the first method to be called on a MonoBehaviour.
+Awake is always called before any Start functions. This allows you to order initialization of scripts.
+Awake is called even if the script is disabled. It only gets called once on each script, and only after other objects are initialised. 
+
+
+Singleton Pattern:
+The singleton pattern is a design pattern in Unity that's often used in game development. It's a container that holds values that can be accessed globally across the project. Singletons are useful because they can transfer game data from scene to scene without saving and loading data.
+
+Here's some more information about the singleton pattern in Unity: 
+Singletons are globally accessible
+Singletons are only generated once
+Singletons are often used with manager scripts
+Singletons are used to manage core systems like input, audio, or networking
+Singletons allow you to connect objects to important parts of the game
+
+
+Game Object:
+GameObjects are the fundamental objects in Unity that represent characters, props and scenery. They do not accomplish much in themselves but they act as containers for Components, which implement the real functionality.
+
+
+AudioSource:
+AudioSource is a component that plays back sounds in a 3D environment. To play 3D sounds, you also need an AudioListener, which is usually attached to the camera.
+An AudioSource controls the playback of an AudioClip, which is the actual sound file. You can assign an AudioClip to an AudioSource by dragging a sound file to the Audio Clip parameter.
+
+
+AudioManager:
+Audio Manager is a game object that controls in-game audio. It allows you to adjust the maximum volume of all sounds in a scene. You can find the Audio Manager by selecting Edit > Project Settings > Audio.
+
+
+Canvas:
+Canvas is a basic component of the UI. It controls how and where the UI is drawn to the screen. The Canvas generates meshes for the UI elements placed on it, regenerates the meshes when UI elements change, and issues draw calls to the GPU. 
+You can also use a Canvas Group to modify the state of children elements. For example, you can modify the alpha value of the group to affect the children elements. 
+
+
+EventSystem:
+The EventSystem is responsible for processing and handling events in a Unity scene. A scene should only contain one EventSystem. The EventSystem works in conjunction with a number of modules and mostly just holds state and delegates functionality to specific, overrideable components.
+
+
+TextMeshPro:
+TextMesh Pro is a set of tools in Unity that allows users to create 2D and 3D text. It offers more control over text layout and formatting than Unity's UI Text and Text Mesh systems.
+
+
+Prefab Variant:
+Prefab variant is a variation of a prefab that is saved as a separate prefab asset. Prefab variants share data with the original prefab but have some overridden properties. For example, you can create a variant of a character with different colors.
+
+Prefabs are a special type of component that allows fully configured GameObjects to be saved in the Project for reuse. This is useful for objects that will be used many times, such as platforms.
+
+
+Game design document:
+A GDD is used as a blueprint for building a game. It defines the game's scope and sets the project's general direction. It also serves as a communication tool between the team. 
+
+Some steps for writing a GDD include: 
+-Brainstorming
+-Organizing ideas into relevant sections
+-Writing a first draft
+-Reviewing
+-Collaborating
+-Iterating
+-Maintaining
+
+
+Viewport:
+Viewport space is normalized and relative to the camera. The bottom-left of the viewport is (0,0); the top-right is (1,1). The z position is in world units from the camera. Note that ViewportToWorldPoint transforms an x-y screen position into a x-y-z position in 3D space.
+
+
+Camera:
+Cameras are essential components in Unity. They display the contents of a scene to users. Every scene must have at least one camera to render scene objects. 
+
+
+Clamp:
+Clamp function restricts a value to a range defined by minimum and maximum values. If the minimum value is greater than the maximum value, the method returns the minimum value. 
+
+
+CreateAssetMenu:
+The CreateAssetMenu attribute in Unity is a wrapper for the UnityEditor.MenuItem attribute. It allows you to create new scriptable object instances from the Create Menu. 
+
+Pathfinding:
+Pathfinding is a computer application that plots the shortest route between two points. It's a practical way to solve mazes. 
+In Unity, pathfinding is often done using a navigation mesh, or "navmesh". This is useful for specifying paths for enemy AI in all types of games. 
+
+
+Particle System:
+The particle system in Unity is a tool that can create a variety of visual effects. These effects can include: Fire, Water, Fluid simulations, Cartoon explosions, Magic spells. 
+The particle system simulates and renders many small images, called particles, to create a visual effect. Each particle in a system represents a graphical element in the effect. The system simulates every particle together to create the effect. 
+
+
+Material:
+In Unity, a material is a file that contains information about an object's lighting. Materials are assets that control the visual appearance of game objects. They are made up of a shader, which is a script that controls the appearance of a rendered surface, and other properties like colors and textures. 
+
+
+Parallax Scrolling:
+Parallax scrolling is a technique that allows the background and foreground layers of a game to move independently from the main screen. This creates a more natural and dynamic look for the game. 
+
+
+Shader:
+A shader specifies one or more textures variables that it expects to use, and the Material Inspector in Unity allows you to assign your own texture assets to these these texture variables.
+
+In Unity, shaders are small scripts that calculate the color of each pixel rendered. They use mathematical calculations and algorithms based on the lighting input and the material configuration. Shaders work together to create an image that appears on the screen. 
+
+Shaders can be used to define the look of 3D objects, including their colors, reflectivity, and physical texture. They can also be used to bring realism into projects or express an artistic style. 
+
+You can also use Shader Graph to visually author shaders and see the results in real-time. Shader Graph is a node-based system that lets you connect nodes in a graph network. 
+
